@@ -1,0 +1,10 @@
+@startuml
+participant User
+participant System
+
+User -> System: Запрос данных
+activate System
+System -> System: Обработка запроса
+System --> User: Ответ с данными
+deactivate System
+@enduml
